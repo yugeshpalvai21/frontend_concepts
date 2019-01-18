@@ -1,0 +1,70 @@
+<!-- EXPLORING FORMS AND FORM ELEMENTS AND ITs ATTRIBUTES -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Explore Form Fields</h1><hr  />
+    <form action="" method="" target="_blank" id="userInput" name="userInput">
+      <fieldset>
+        <legend>Article Info</legend>
+        <div>
+          <label>Title</label><br  />
+          <input name="title" type="text" placeholder="Enter Title Here.."  />
+        </div><br  />
+        <div>
+          <label>Description</label><br />
+          <textarea name="description" rows="8" cols="80" placeholder="Description Goes Here..."></textarea>
+        </div><br />
+        <div>
+          <label>Select Category</label>
+          <select name="category">
+            <option value="ruby" selected>Ruby</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+          </select>
+        </div><br />
+        <div>
+          <label>Source</label>
+          <input name="source" type="url" placeholder="Enter Source URL Here.."  />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>User Info</legend>
+        <div>
+          <label>UserName</label>
+          <input type="text" name="username"  />
+        </div><br  />
+        <div>
+          <label>password</label>
+          <input type="password" name="password"  />
+        </div><br  />
+        <div>
+          <label>email</label>
+          <input type="email" name="email"  />
+        </div><br  />
+        <div>
+          <label>Birth Date</label>
+          <input type="date" name="dateofbirth"  />
+        </div><br  />
+        <div>
+          <label>Gender</label><br  />
+          <input type="radio" name="gender" value="male"  />Male <br  />
+          <input type="radio" name="gender" value="female"  />Female <br  />
+          <input type="radio" name="gender" value="female"  />Other
+        </div><br  />
+        <div>
+          <label>Subjects</label>
+          <input type="checkbox" name="subjects" value="maths" />Maths
+          <input type="checkbox" name="subjects" value="science" />Science
+          <input type="checkbox" name="subjects" value="accounts" />Accounts
+        </div><br  />
+      </fieldset><br  /><br />
+      <div>
+        <input type="submit" value="Submit Form" />
+      </div>
+    </form>
+  </body>
+</html>
