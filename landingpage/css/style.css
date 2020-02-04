@@ -2,16 +2,22 @@ body {
     background: url('../images/gym.jpg') no-repeat center center fixed;
     background-size: cover;
 }
+
 div {
-    background-color:#0077b5;
-    margin-top: 200px;
-}
-h1 {
+    width: 80%;
+    background-color: #0077b5;
     margin: 0 auto;
-    color: #fff;
-    font-size: 2em;
+    border-radius: 10px;
+    padding: 5px;
     text-align: center;
 }
 i {
     color: tomato;
+}
+
+button {
+    border: none;
+    border-radius:5px;
+    padding: 5px;
+    font-size: 1em;
 }
