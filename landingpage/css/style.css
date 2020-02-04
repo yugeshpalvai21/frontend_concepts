@@ -1,0 +1,7 @@
+body {
+    background: url('../images/gym.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+h1 {
+    border: 1px solid red;
+}
