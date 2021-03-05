@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightgray;
+}
+
+body h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 1.8px;;
+}
+
+.container {
+    width: 90vw;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+.panel {
+    margin: 5px;
+    border-radius: 25px;
+    height: 80vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.panel.active {
+    flex: 0.4;
+}
+
+.panel h3 {
+    opacity: 0;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    transition: 0.4s ease-in-out 0.4s;
+    color: #fff;
+}
+
+
