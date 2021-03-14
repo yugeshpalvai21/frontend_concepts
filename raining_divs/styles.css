@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#drop1 {
+    width: 5px;
+    height: 5px;
+    margin: auto;
+    background: grey;
+    border-radius: 50px;
+    position: absolute;
+    animation-name: letsrain;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes letsrain {
+    0% {top: -150px}
+    25% {top: 150px;}
+    50% {top: 450px;}
+    75% {top: 600px;}
+    100% {top: 800px;}
+}
