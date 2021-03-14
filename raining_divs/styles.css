@@ -14,6 +14,45 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    transition-property: opacity;
+    transition-duration: 2s;
+}
+
+.content {
+    position: relative;
+    margin-top: 100px;
+}
+
+.content1 {
+    position: absolute;
+    left: 30%;
+    width: 400px;
+    height: 500px;
+    background: lightgray;
+    transform: rotate(-10deg);
+
+}
+.content2 {
+    position: absolute;
+    left: 30%;
+    width: 400px;
+    height: 500px;
+    background: lightgray;
+    transform: rotate(10deg);
+}
+
+.content3 {
+    position: absolute;
+    left: 30%;
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    z-index: 1;
+}
+
+.content3 h1{
+    text-align: center;
+    padding-top: 50%;
 }
 
 @keyframes letsrain {
@@ -21,5 +60,5 @@
     25% {top: 150px;}
     50% {top: 450px;}
     75% {top: 600px;}
-    100% {top: 800px;}
+    100% {top: 600px; opacity: 0;}
 }
