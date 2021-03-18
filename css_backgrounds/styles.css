@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightslategray;
+}
+
+.wrapper {
+    border: 1px solid tomato;
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+    background-image: url('backgroun1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-position: center center;
+    background-attachment: fixed;
+}
