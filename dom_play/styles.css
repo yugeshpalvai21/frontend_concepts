@@ -5,6 +5,8 @@
 
 body {
     background: lightgray;
+    font-family: 'Aclonica', 'sans-serif', 'serif';
+    font-size: 10px;
 }
 
 .container {
