@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 30vh;
+    background-color: lightgrey;
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative;
+}
+
+.relative {
+    border: 1px solid red;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background: tomato;
+}
+
+.absolute {
+    background: white;
+    border: 1px solid yellow;
+    position: absolute;
+    top: 10px;
+}
+
