@@ -92,3 +92,10 @@ body {
     border-radius: 50%;
     border: 1px solid #fff;
 }
+
+.maxwidth {
+    border: 1px solid #fff;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+}
