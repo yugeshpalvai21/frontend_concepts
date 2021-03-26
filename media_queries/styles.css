@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#media {
+    border: 1px solid tomato;
+    border-radius: 5px;
+    background-color: rgba(183, 125,122, 0.9);
+    color: #000;
+    transition: background-color 5s;
+}
+
+@media screen and (min-width: 776px) {
+    #media {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media screen and  (max-width: 775px) {
+    #media {
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        height: 400px;
+        background: rgba(111,222,121,0.6);
+    }
+}
