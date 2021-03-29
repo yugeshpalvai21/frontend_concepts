@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+#main {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+#progress-container::before {
+    content: '';
+    position: absolute;
+    top:  50%;
+    left: 0;
+    border: 1px solid lightgrey;
+    width: 100%;
+    z-index: -2;
+}
+
+.steps {
+    border: 1px solid red;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    position: absolute;
+    top:  50%;
+    left: 0;
+    border: 1px solid blue;
+    width: 0%;
+    z-index: -1;
+}
+
+.active {
+    background: tomato;
+}
