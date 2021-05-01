@@ -1,0 +1,12 @@
+{
+  "name": "expljs",
+  "version": "1.0.0",
+  "description": "Front End Play Area",
+  "main": "index.js",
+  "repository": "https://github.com/yugeshpalvai21/expljs.git",
+  "author": "Yugesh Palvai <yugeshpalvai21@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
