@@ -6,6 +6,9 @@
   "repository": "https://github.com/yugeshpalvai21/expljs.git",
   "author": "Yugesh Palvai <yugeshpalvai21@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "server": "live-server animate_expl"
+  },
   "dependencies": {
     "live-server": "^1.2.1"
   }
