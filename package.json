@@ -7,7 +7,7 @@
   "author": "Yugesh Palvai <yugeshpalvai21@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "server": "live-server js_dom_manipulation"
+    "server": "live-server animate_expl"
   },
   "dependencies": {
     "live-server": "^1.2.1"
