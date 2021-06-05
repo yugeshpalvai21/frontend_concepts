@@ -7,7 +7,7 @@
   "author": "Yugesh Palvai <yugeshpalvai21@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "server": "live-server geolocation_api"
+    "server": "live-server css_positions"
   },
   "dependencies": {
     "live-server": "^1.2.1"

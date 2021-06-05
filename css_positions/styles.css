@@ -3,27 +3,35 @@
     padding: 0;
 }
 
+div {
+    border: 1px solid red;
+}
 .container {
-    height: 30vh;
-    background-color: lightgrey;
-    overflow: hidden;
-    margin-top: 20px;
+    height: 500px;
+    width: 500px;
+    background: grey;
+    margin: auto;
+    margin-top: 10vh;
     position: relative;
 }
 
 .relative {
-    border: 1px solid red;
-    height: 30px;
     position: relative;
-    top: 10px;
+    top: 20px;
     left: 20px;
-    background: tomato;
+    height: 50px;
 }
 
 .absolute {
-    background: white;
-    border: 1px solid yellow;
     position: absolute;
-    top: 10px;
+    bottom: 20px;
+    width: 100%;
+    right: 40px;
 }
 
+.sticky {
+    position: sticky;
+    left: 0;
+    top: 230px;
+    width: 100px;
+}
