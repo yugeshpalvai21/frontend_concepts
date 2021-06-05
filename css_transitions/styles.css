@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightgrey;
+}
+
+.transit {
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    margin: auto;
+    position: relative;
+    top: 200px;
+    transition-property: all;
+    transition-duration: 4s;
+    transition-delay: 1s; 
+}
+
+.transit:hover {
+    background: tomato;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
