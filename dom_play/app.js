@@ -1,3 +1,25 @@
+// Create Element And Attach to DOM
+window.onload = () => {
+    var mainElement = document.querySelector("#wrapper");
+    console.log(mainElement);
+
+
+    var anchorElement = document.createElement("a")
+    var anchorText = document.createTextNode("Privacy")
+    anchorElement.append(anchorText);
+    anchorElement.setAttribute("href", "#");
+    
+    var elementOne = document.createElement("li");
+    
+    elementOne.appendChild(anchorElement);
+
+    var navElement = document.querySelector("#header .navigation ul")
+    console.log(navElement);
+    navElement.appendChild(elementOne);
+    console.log(navElement);
+
+}
+
 // // Selecting Elements with CSS way
 
 // window.onload = () => {
