@@ -1,14 +1,30 @@
-// Selecting Elements With html way
-window.onload = () => {
-    var mainElement = document.getElementById('wrapper');
-    console.dir(mainElement);
+// // Selecting Elements with CSS way
 
-    var elementTwo = document.getElementsByTagName('ul');
-    console.log(elementTwo);
+// window.onload = () => {
+//     var elementOne = document.querySelector('#wrapper');
+//     console.log(elementOne);
 
-    var elementThree = document.getElementsByClassName('col_1');
-    console.log(elementThree);
-}
+//     var elementTwo = document.querySelector(".col_1");
+//     console.log(elementTwo);
+
+//     var elementThree = document.querySelectorAll(".col_1");
+//     console.log(elementThree);
+
+//     var elementFour = document.querySelectorAll("div");
+//     console.log(elementFour);
+// }
+
+// // Selecting Elements With html way
+// window.onload = () => {
+//     var mainElement = document.getElementById('wrapper');
+//     console.dir(mainElement);
+
+//     var elementTwo = document.getElementsByTagName('ul');
+//     console.log(elementTwo);
+
+//     var elementThree = document.getElementsByClassName('col_1');
+//     console.log(elementThree);
+// }
 
 
 // // Self Calling Function
