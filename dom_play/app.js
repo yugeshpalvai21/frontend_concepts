@@ -1,9 +1,21 @@
+// Selecting Elements With html way
+window.onload = () => {
+    var mainElement = document.getElementById('wrapper');
+    console.dir(mainElement);
 
-// Self Calling Function
+    var elementTwo = document.getElementsByTagName('ul');
+    console.log(elementTwo);
 
-(function someName() {
-    console.log('generated some randon name');
-})();
+    var elementThree = document.getElementsByClassName('col_1');
+    console.log(elementThree);
+}
+
+
+// // Self Calling Function
+
+// (function someName() {
+//     console.log('generated some randon name');
+// })();
 
 //  //Examin Window and Document Objects
 // console.log(window);
