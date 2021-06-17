@@ -1,40 +1,46 @@
 // Create Element And Attach to DOM
-window.onload = () => {
-    var mainElement = document.querySelector("#wrapper");
-    console.log(mainElement);
+// window.onload = () => {
+//     var mainElement = document.querySelector("#wrapper");
+//     console.log(mainElement);
 
 
-    var anchorElement = document.createElement("a")
-    var anchorText = document.createTextNode("Privacy")
-    anchorElement.append(anchorText);
-    anchorElement.setAttribute("href", "#");
+//     var anchorElement = document.createElement("a")
+//     var anchorText = document.createTextNode("Privacy")
+//     anchorElement.append(anchorText);
+//     anchorElement.setAttribute("href", "#");
     
-    var elementOne = document.createElement("li");
+//     var elementOne = document.createElement("li");
     
-    elementOne.appendChild(anchorElement);
+//     elementOne.appendChild(anchorElement);
 
-    var navElement = document.querySelector("#header .navigation ul")
-    console.log(navElement);
-    navElement.appendChild(elementOne);
-    console.log(navElement);
+//     var navElement = document.querySelector("#header .navigation ul")
+//     console.log(navElement);
+//     navElement.appendChild(elementOne);
+//     console.log(navElement);
 
-}
+// }
 
 // // Selecting Elements with CSS way
 
-// window.onload = () => {
-//     var elementOne = document.querySelector('#wrapper');
-//     console.log(elementOne);
+window.onload = () => {
+    var elementOne = document.querySelector('#wrapper');
+    console.log(elementOne);
 
-//     var elementTwo = document.querySelector(".col_1");
-//     console.log(elementTwo);
+    var elementTwo = document.querySelector(".col_1");
+    console.log(elementTwo);
 
-//     var elementThree = document.querySelectorAll(".col_1");
-//     console.log(elementThree);
+    var elementThree = document.querySelectorAll(".col_1");
+    console.log(elementThree);
 
-//     var elementFour = document.querySelectorAll("div");
-//     console.log(elementFour);
-// }
+    var elementFour = document.querySelectorAll("div");
+    console.log(elementFour);
+
+    var elementFive = document.querySelectorAll("a[href='#']");
+    console.log(elementFive);
+
+    var elementFive = document.querySelectorAll("a[href='google']");
+    console.log(elementFive);
+}
 
 // // Selecting Elements With html way
 // window.onload = () => {
