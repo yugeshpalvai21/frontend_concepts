@@ -1,3 +1,24 @@
+// DOM Manipulation 
+
+window.onload = () => {
+    var elementOne = document.getElementById("wrapper");
+    console.log(elementOne);
+
+    var elementTwo = document.querySelector("#page_content .left_side_bar .col_1 .box ul");
+    console.log(elementTwo);
+
+    console.log(elementTwo.children);
+    console.log(elementTwo.parentElement);
+
+    console.log(elementTwo.firstElementChild);
+    var anchorElement = elementTwo.lastElementChild.firstElementChild;
+    console.log(anchorElement);
+
+    setTimeout(() => {
+        anchorElement.innerText = "Menu Item 3 (Modified Through DOM)";
+    }, 5000);
+}
+
 // Create Element And Attach to DOM
 // window.onload = () => {
 //     var mainElement = document.querySelector("#wrapper");
@@ -22,25 +43,25 @@
 
 // // Selecting Elements with CSS way
 
-window.onload = () => {
-    var elementOne = document.querySelector('#wrapper');
-    console.log(elementOne);
+// window.onload = () => {
+//     var elementOne = document.querySelector('#wrapper');
+//     console.log(elementOne);
 
-    var elementTwo = document.querySelector(".col_1");
-    console.log(elementTwo);
+//     var elementTwo = document.querySelector(".col_1");
+//     console.log(elementTwo);
 
-    var elementThree = document.querySelectorAll(".col_1");
-    console.log(elementThree);
+//     var elementThree = document.querySelectorAll(".col_1");
+//     console.log(elementThree);
 
-    var elementFour = document.querySelectorAll("div");
-    console.log(elementFour);
+//     var elementFour = document.querySelectorAll("div");
+//     console.log(elementFour);
 
-    var elementFive = document.querySelectorAll("a[href='#']");
-    console.log(elementFive);
+//     var elementFive = document.querySelectorAll("a[href='#']");
+//     console.log(elementFive);
 
-    var elementFive = document.querySelectorAll("a[href='google']");
-    console.log(elementFive);
-}
+//     var elementFive = document.querySelectorAll("a[href='google']");
+//     console.log(elementFive);
+// }
 
 // // Selecting Elements With html way
 // window.onload = () => {
