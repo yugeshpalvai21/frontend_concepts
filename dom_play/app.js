@@ -1,23 +1,44 @@
-// DOM Manipulation 
+// DOM Manipulation
 
 window.onload = () => {
     var elementOne = document.getElementById("wrapper");
     console.log(elementOne);
 
-    var elementTwo = document.querySelector("#page_content .left_side_bar .col_1 .box ul");
-    console.log(elementTwo);
+    var header = document.querySelector("#header");
+    header.firstElementChild.style.cssText = "background-color: grey; border-radius: 5px; color: white;";
+    header.firstElementChild.firstElementChild.innerText = "Welcome to the Demo App";
 
-    console.log(elementTwo.children);
-    console.log(elementTwo.parentElement);
+    header.firstElementChild.style.padding = "15px";
+    header.firstElementChild.style.textAlign = "center";
+    
+    header.classList.add("hello");
+    header.classList.add("world");
 
-    console.log(elementTwo.firstElementChild);
-    var anchorElement = elementTwo.lastElementChild.firstElementChild;
-    console.log(anchorElement);
+    header.addEventListener("click", () => {
+        header.firstElementChild.style.backgroundColor = "tomato";
+    });
 
-    setTimeout(() => {
-        anchorElement.innerText = "Menu Item 3 (Modified Through DOM)";
-    }, 5000);
 }
+// Element Traversing 
+
+// window.onload = () => {
+//     var elementOne = document.getElementById("wrapper");
+//     console.log(elementOne);
+
+//     var elementTwo = document.querySelector("#page_content .left_side_bar .col_1 .box ul");
+//     console.log(elementTwo);
+
+//     console.log(elementTwo.children);
+//     console.log(elementTwo.parentElement);
+
+//     console.log(elementTwo.firstElementChild);
+//     var anchorElement = elementTwo.lastElementChild.firstElementChild;
+//     console.log(anchorElement);
+
+//     setTimeout(() => {
+//         anchorElement.innerText = "Menu Item 3 (Modified Through DOM)";
+//     }, 5000);
+// }
 
 // Create Element And Attach to DOM
 // window.onload = () => {
