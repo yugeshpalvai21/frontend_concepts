@@ -1,0 +1,30 @@
+div {
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+button {
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    /* transition: all 1s ease-in-out; */
+    
+}
+
+/* button:hover {
+    animation-name: buttonChange;
+    animation-duration: 1s;
+}
+
+@keyframes buttonChange {
+    0% {background: white;}
+    25% {background: tomato;}
+    50% {background: blue;}
+    75% {background: yellow;}
+    100% {background: #fff;}
+} */

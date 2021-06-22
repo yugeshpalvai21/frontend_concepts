@@ -7,7 +7,7 @@
   "author": "Yugesh Palvai <yugeshpalvai21@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "server": "live-server dom_play"
+    "server": "live-server css_before_after"
   },
   "dependencies": {
     "live-server": "^1.2.1"
