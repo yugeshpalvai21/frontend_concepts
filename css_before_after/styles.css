@@ -6,25 +6,39 @@ div {
 }
 
 button {
-    padding: 20px;
+    background-color: grey;
+    color: black;
+    padding: 2em 3em;
+    border: none;
     border-radius: 10px;
-    background: #fff;
-    padding-left: 30px;
-    padding-right: 30px;
+    outline: none;
     position: relative;
-    /* transition: all 1s ease-in-out; */
-    
+    cursor: pointer;
+    z-index: 1;
+    transition: color 1s ease-in-out;
 }
 
-/* button:hover {
-    animation-name: buttonChange;
-    animation-duration: 1s;
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: tomato;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1s ease-in-out;
 }
 
-@keyframes buttonChange {
-    0% {background: white;}
-    25% {background: tomato;}
-    50% {background: blue;}
-    75% {background: yellow;}
-    100% {background: #fff;}
-} */
+button:hover::before {
+  transform: scaleX(1);
+}
+
+button:hover {
+    color: white;
+}
+
+
