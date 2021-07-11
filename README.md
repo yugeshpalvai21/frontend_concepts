@@ -9,7 +9,7 @@
 - DOM Manipulation
 - JQUERY
 - SASS
-- BOOTSTRAP
+- BOOTSTRAP 4 & 5
 
 ### File Structure
 
