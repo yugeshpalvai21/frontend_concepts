@@ -1,42 +1,19 @@
-// FETCH DATA
+// CALLBACKS -> Make JS Asynchronus requests to synchronus requests
 
-const userData = [{name: 'yugesh', location: 'IND', admin: true}];
-
-function displayData() {
-    let output = '';
-    userData.forEach((user) => {
-        output += `<li>${user.name} - ${user.location} - ${user.admin}</li>`
-    });
-    document.body.innerHTML = output;
+function StepOne() {
+    console.log('step 1 executed..');
 }
 
-displayData();
-console.log(userData);
-
-function insertData(callback) {
-    userData.push({name: 'john', location: 'USA', admin: false});
-    callback();
+function StepTwo(callback) {
+    setTimeout(() => {
+        console.log('step 2 executed..');
+        callback();
+    }, 5);
 }
 
-insertData(displayData);
-console.log(userData);
+function StepThree() {
+    console.log('step 3 executed..');
+}
 
-insertData(displayData);
-console.log(userData);
-
-
-
-// // Basic Example
-// function runOne(callback) {
-//     setTimeout(() => {
-//         console.log('running one');
-//         callback();
-//     }, 3000)
-// }
-
-// function runTwo() {
-//     console.log('running two');
-// }
-
-// runOne(runTwo);
-
+StepOne();
+StepTwo(StepThree);
