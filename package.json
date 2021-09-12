@@ -7,7 +7,7 @@
   "author": "Yugesh Palvai <yugeshpalvai21@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "server": "live-server js_callbacks"
+    "server": "live-server js_promises"
   },
   "dependencies": {
     "live-server": "^1.2.1"

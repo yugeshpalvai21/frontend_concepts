@@ -1,18 +1,19 @@
-function firstOne() {
-    console.log('running this as callback from promises')
+const handleOutput = (user) => {
+    let tarElement  = document.querySelector('.main')
+    tarElement.innerHTML = `<ul><li>${user.name}</li><li>${user.location}</li></ul>`; 
 }
 
-function secondOne() {
-    return new Promise((resolve, reject) => {
-        let admin = false;
-        if(admin) {
-            resolve();
-        } else {
-            reject('Admin Set TO FALSEEEE')
-        }
-    });
-}
+const prom = new Promise((Resolve, Reject) => {
+    const x = 6;
+    if(x==6) {
+        Resolve({name: 'yugesh', location: 'IND'})
+    } else {
+        Reject(404, 'Unable To Gather Data')
+    }
+})
 
-secondOne()
-.then(firstOne)
-.catch(err => console.log(err))
+prom.then(function(data){
+    handleOutput(data); 
+}, function(status, error) {
+    console.log(status, error);
+})
