@@ -20,14 +20,27 @@ const processRequest = (state) => {
   })
 }
 
-makeRequest('India')
-.then((success) => {
-  console.log(success);
-  return processRequest('TG');
-})
-.then((success) => {
-  console.log(success);
-})
-.catch((err) => {
-  console.log(err)
-})
+// makeRequest('India')
+// .then((success) => {
+//   console.log(success);
+//   return processRequest('TG');
+// })
+// .then((success) => {
+//   console.log(success);
+// })
+// .catch((err) => {
+//   console.log(err)
+// })
+
+async function handleRequest() {
+  try {
+    let make = await makeRequest('India');
+    console.log(make);
+    let process = await processRequest('TG');
+    console.log(process);
+  } catch(err) {
+    console.log(err);
+  }
+}
+
+handleRequest();
