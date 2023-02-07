@@ -6,10 +6,13 @@
   "repository": "https://github.com/yugeshpalvai21/expljs.git",
   "author": "Yugesh Palvai <yugeshpalvai21@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "server": "live-server js_async_await"
   },
   "dependencies": {
-    "live-server": "^1.2.1"
+    "inversify": "^6.0.1",
+    "live-server": "^1.2.1",
+    "reflect-metadata": "^0.1.13"
   }
 }
