@@ -6,16 +6,12 @@ function createPerson(name) {
         let age = 0; // Private variable
                 
         return {
-                getName: function() {
-                return name;
-                },
-                getAge: function() {
-                return age;
-                },
-                setAge: function(newAge) {
-                if (newAge >= 0) {
-                age = newAge;
-                }
+                getName: () => name,
+                getAge: () => age,
+                setAge: (newAge) => {
+                        if (newAge >= 0) {
+                                age = newAge;
+                        }
                 }
         };
 }
